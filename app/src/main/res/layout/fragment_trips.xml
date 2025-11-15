@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Empty State (shown when no trips) -->
+    <TextView
+        android:id="@+id/empty_state_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No trips saved yet!\n\nStart a conversation with Wanderly AI to plan your first trip."
+        android:textSize="16sp"
+        android:textColor="#030459"
+        android:padding="32dp"
+        android:textAlignment="center" />
+
+    <!-- Trips List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trips_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

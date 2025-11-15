@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Budget ($)"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/budget_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your daily budget"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Style"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/travel_style_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/style_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget Backpacker" />
+
+        <RadioButton
+            android:id="@+id/style_luxury"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luxury Traveler" />
+
+        <RadioButton
+            android:id="@+id/style_adventure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adventure Seeker" />
+
+        <RadioButton
+            android:id="@+id/style_cultural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cultural Explorer" />
+
+    </RadioGroup>
+
+</LinearLayout>
